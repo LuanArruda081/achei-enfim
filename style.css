@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui;
+}
+
+body{
+    background-color: #5abbf31f;
+}
+
+header{
+    width: 100%;
+    margin-bottom: 100px;
+
+}
+
+.header-conteiner{
+    background-color: #00a3ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .procurar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+        position: relative;
+        padding: 50px;
+      
+        & input {
+          width: 100%;
+          height: 50px;
+          position: absolute;
+          padding: 10px;
+          border: 0;
+          outline: 0;
+          border-radius: 10px;
+        }
+      
+        & i {
+          position: absolute;
+          right: 0;
+          padding: 15px;
+          cursor: pointer;
+        }
+      }
+}
+
+.headerp1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    width: 90%;
+}
+
+.headerp2{
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    text-align: center;
+}
+
+.anuncios{
+    & img{
+        border-radius: 30px;
+    }
+}
+main {
+    text-align: center;
+
+}
+
+
+.anuncios {
+    position: relative;
+    margin: auto;
+}
+
+.carrosel-anuncios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+/* Largura igual à das imagens */
+
+.slide-wrapper {
+    overflow: hidden;
+    width: 1500px; 
+    display: flex;
+}
+
+/* Largura igual à das imagens */
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    flex-shrink: 0;
+    width: 1500px; 
+}
+
+.carrosel-anuncios button {
+    background-color: rgba(0, 47, 255, 0.5);
+    color: white;
+    border: none;
+    padding: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.carrosel-anuncios button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.bvoltar {
+    left: 100px;
+}
+
+.bpassar {
+    right: 100px;
+}
+
+
+
+.nav-conteiner ul{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    list-style: none;
+    padding: 5px;
+    
+    
+
+    & a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 17px;
+    }
+}
+
+
+
+.achados-quentes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achadosq-conteiner{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.texto-achadosquentes{
+    width: 100%;
+    margin-bottom: 50px;
+    letter-spacing: .8px;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+.produtos-quentes{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.produtosq{
+    background-color: #fff;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 17px;
+    gap: 1rem;
+    align-items: center;
+    transition: box-shadow 0.3s ease-in-out;
+    
+    & img{
+        width: 220px;
+        height: 200px;
+    }
+
+    & p{
+        text-align: center;
+        font-weight: 500;
+        font-size: 15px;
+        margin: 24px 5px auto;
+    }
+
+    & a{
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        background-color: #0077ff;
+        padding: 10px;
+        border-radius: 20px;
+        width: 80%;
+        font-size: 15px;
+        transition:  0.3s ease-in-out;        
+    }
+
+    & a:hover{
+        background-color: #003cff;
+    }
+
+    & span{
+        color: #464646;
+        font-weight: 300;
+        text-decoration: line-through
+        
+    }
+
+    & strong{
+        text-align: center;
+        font-size: 25px;
+        color: #00a3ff;      
+    }
+
+    &:hover {
+        box-shadow: 0 4px 0 0 #0077ff; 
+        
+    }
+}
+
+/* Produtos fitness */
+
+#areafit{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.areafit-conteiner{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.areafit-text{
+    width: 100%;
+    margin-bottom: 50px;
+    letter-spacing: .8px;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+.produtos-areafit{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.pfitness{
+    background-color: #fff;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 17px;
+    gap: 1rem;
+    align-items: center;
+    transition: box-shadow 0.3s ease-in-out;
+    
+    & img{
+        width: 220px;
+        height: 200px;
+    }
+
+    & p{
+        text-align: center;
+        font-weight: 500;
+        font-size: 15px;
+        margin: 24px 5px auto;
+    }
+
+    & a{
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+        background-color: #0077ff;
+        padding: 10px;
+        border-radius: 20px;
+        width: 80%;
+        font-size: 15px;
+        transition:  0.3s ease-in-out;        
+    }
+
+    & a:hover{
+        background-color: #003cff;
+    }
+
+    & span{
+        color: #464646;
+        font-weight: 300;
+        text-decoration: line-through
+        
+    }
+
+    & strong{
+        text-align: center;
+        font-size: 25px;
+        color: #00a3ff;      
+    }
+
+    &:hover {
+        box-shadow: 0 4px 0 0 #0077ff; 
+        
+    }
+}
