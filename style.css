@@ -261,6 +261,8 @@ main {
     align-items: center;
 }
 
+
+
 .areafit-conteiner{
     width: 80%;
     margin: 50px auto;
@@ -271,7 +273,8 @@ main {
 }
 
 
-.areafit-text{
+.areafit-text p{
+
     width: 100%;
     margin-bottom: 50px;
     letter-spacing: .8px;
@@ -284,6 +287,8 @@ main {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
 }
 
 .pfitness{
